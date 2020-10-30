@@ -17,6 +17,14 @@ export class AppComponent {
 		return 800;
 	}
 
+  getHeight() : any {
+				if (document.body.offsetWidth < 800) {
+			return '90%';
+		}
+		
+		return 800;
+	}
+
     generateLayout(): any[] {
         let layout = [
             {
